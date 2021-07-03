@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
 * {
   margin: none;
   padding: none;
@@ -10,25 +13,115 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 20px;
 }
 .card {
   background-color: white;
-  height: 300px;
   width: 90%;
+  height: 320px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; 
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .avatar {
-  width: 40%;
-  height: 40%;
+  width: 130px;
+  height: 130px;
   background-image: url("./avatar.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 100%;
   transform: translateY(50px);
+  margin-bottom: 40px;
+}
+.card h1 {
+  font-family: 'Poppins', sans-serif;
+}
+.card h2 {
+  transform: translateY(-30px);
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+  color: rgba(0,0,0, .6);
+}
+
+/* start of about */
+.content {
+ width: 90%;
+ height: auto;
+ display: flex;
+ flex-direction: column;
+ margin-top: 25px;
+}
+.content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+  color: white
+}
+.content hr {
+  width: 100%;
+  border-bottom: .5px solid rgba(255, 255, 255, .8);
+}
+.content h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+
+}
+
+.about,
+.recentWork,
+.contact {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.about {
+  background-color: #3288ED;
+}
+.recentWork {
+  background-color: #1b72d6;
+}
+.recentWork h3 > ul {
+  transform: translate(-30px, -20px);
+  list-style-type: none; 
+}
+.recentWork h3 ul li {
+  margin: 10px 0; 
+}
+.recentWork h3 > ul li::before {
+  content: url('./rightArrow.png'); 
+  margin: 0 10px; 
+}
+.contact {
+  background-color: #1b66bb;
+}
+.socialsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.socialCard {
+  border: .5px solid rgba(255, 255, 255, .5);
+  border-radius: 5px;
+  height: 30px;
+  width: auto;
+  padding: .25em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: .25em .25em; 
+}
+.socialCard i {
+  margin: 0 .50em;
 }
 
