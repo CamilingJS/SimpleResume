@@ -140,17 +140,31 @@ body {
     display: flex;
     flex-direction: row;
     align-self: center;
-  }
-  .titles {
-    width: 100px;
-    display: flex;
-  }
-  
-  .content hr {
-    width: .25px;
-    border-right: 0.5px solid rgba(255, 255, 255, 0.8);
-    margin: 0 20px;
     
   }
+  .titles {
+    width: 10%;
+    display: flex;
+  }
+  .titles h1 {
+    margin: 0 5px; 
+  }
+  .content2 {
+    width: 90%;
+  }
+  .about h3 {
+    margin-left: 20px;
+  }
+  .content hr {
+    height: 90%;
+    width: .25px;
+    background-color: white;
+    margin-right: 0;
+  }
+  .content2 > .socialsContainer {
+    margin-left: 20px;
+    justify-content: start;
+  }
+
   
 }
